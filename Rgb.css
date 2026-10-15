@@ -1,0 +1,10 @@
+.rgb {
+    animation: rgb 3s infinite;
+}
+
+@keyframes rgb {
+    0% { color: rgb(255, 0, 0); }
+    33% { color: rgb(0, 255, 0); }
+    66% { color: rgb(0, 0, 255); }
+    100% { color: rgb(255, 0, 0); }
+}
