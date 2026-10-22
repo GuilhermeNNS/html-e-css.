@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos utilizados na Lagarta</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #101827;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .rgb {
+            animation: mudarCor 5s infinite;
+        }
+
+        @keyframes mudarCor {
+            0%   { color: red; }
+            25%  { color: yellow; }
+            50%  { color: lime; }
+            75%  { color: cyan; }
+            100% { color: magenta; }
+        }
+
+        table {
+            width: 100%;
+            border: 5px solid blue;
+            border-collapse: collapse;
+            text-align: center;
+            background-color: #1e293b;
+        }
+
+        th, td {
+            border: 2px solid #38bdf8;
+            padding: 15px;
+            font-size: 22px;
+        }
+
+        img {
+            width: 100%;
+            max-width: 350px;
+            height: 150px;
+            object-fit: contain;
+            margin-top: 10px;
+        }
+
+        p {
+            font-size: 20px;
+            line-height: 1.7;
+        }
+
+        form {
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+
+        input, textarea {
+            display: block;
+            width: 100%;
+            max-width: 400px;
+            padding: 12px;
+            margin-top: 8px;
+            background-color: #1e293b;
+            color: white;
+            border: 2px solid #38bdf8;
+            border-radius: 6px;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        button:hover {
+            background-color: #0284c7;
+        }
+
+        nav {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        a {
+            color: cyan;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: yellow;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 10px;
+            }
+
+            th, td {
+                font-size: 14px;
+                padding: 5px;
+            }
+
+            img {
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <footer>
+        <h1 class="rgb">Produtos utilizados na Lagarta</h1>
+    </footer>
+
+    <hr>
+
+    <table>
+        <tr>
+            <th>
+                Lagarta
+                <br>
+                <img src="larp.webp" alt="Lagarta">
+            </th>
+            <th>Resultado</th>
+        </tr>
+
+        <tr>
+            <th>
+                Valores gastos
+                <br>
+                <img src="images.jpeg" alt="Investimento">
+            </th>
+            <td>Aproximadamente US$ 7 bilhões</td>
+        </tr>
+
+        <tr>
+            <th>
+                Tempo de fabricação
+                <br>
+                <img src="sem-titulo.avif" alt="Construção">
+            </th>
+            <td>Inaugurado em 22 de maio de 2025</td>
+        </tr>
+
+        <tr>
+            <th>
+                Impacto econômico estimado
+                <br>
+                <img src="ABB.jpeg" alt="Economia">
+            </th>
+            <td>Estimativa de US$ 2 bilhões no primeiro ano</td>
+        </tr>
+    </table>
+
+    <br>
+
+    <blockquote>
+        <p class="rgb">
+            O Universal Epic Universe, localizado em Orlando, nos
+            Estados Unidos, foi um dos maiores projetos realizados
+            pela Universal. Sua construção exigiu um investimento
+            de aproximadamente US$ 7 bilhões, incluindo a
+            infraestrutura necessária. As obras começaram em 2018,
+            e o parque foi oficialmente inaugurado em 22 de maio
+            de 2025. O projeto envolveu trabalhadores, equipamentos,
+            materiais de construção e muita tecnologia.
+
+            O parque possui áreas temáticas, atrações, restaurantes
+            e lojas. Em relação à arrecadação, o valor anual do
+            Epic Universe depende do desempenho do empreendimento.
+            A estimativa de impacto econômico de US$ 2 bilhões no
+            primeiro ano não significa necessariamente que esse
+            seja o faturamento direto do parque. O empreendimento
+            contribui para o turismo, a geração de empregos e a
+            economia da Flórida.
+        </p>
+    </blockquote>
+
+    <hr>
+
+    <h1>Fale conosco caso queira comprar um produto</h1>
+
+    <form>
+        <label for="nome">Nome:</label>
+        <input id="nome" name="nome" type="text"
+            placeholder="Digite seu nome" required>
+
+        <br>
+
+        <label for="email">E-mail:</label>
+        <input id="email" name="email" type="email"
+            placeholder="Digite seu e-mail" required>
+
+        <br>
+
+        <label for="senha">Senha:</label>
+        <input id="senha" name="senha" type="password"
+            placeholder="Digite sua senha" required>
+
+        <br>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem"
+            rows="5" placeholder="Digite sua mensagem"></textarea>
+
+        <br>
+
+        <button type="submit">Enviar</button>
+    </form>
+
+    <nav>
+        <h1><a class="rgb" href="index.html">Início</a></h1>
+    </nav>
+
+</body>
+</html>
